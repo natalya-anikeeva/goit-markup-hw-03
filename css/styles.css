@@ -29,7 +29,7 @@ ul {
   margin: 0;
 }
 
-.logo1 {
+.logo-left {
   color: var(--accent-color);
 
   font-family: Raleway, sans-serif;
@@ -37,13 +37,17 @@ ul {
   font-size: 26px;
   line-height: 1.19;
 }
-.logo2 {
+.logo-right {
   color: #000000;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.footer-logo .logo-right {
+  color: var(--text-white-color);
 }
 
 /*Site nav*/
@@ -252,9 +256,10 @@ h3 {
 }
 
 /*Футер*/
-.footer {
+.page-footer {
   background: #2f303a;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .adress-footer {
@@ -262,6 +267,9 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .uppercase {
@@ -277,12 +285,27 @@ h3 {
   padding-bottom: 94px;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
-}
-
 .adress-footer-line {
   margin-bottom: 9px;
+}
+
+.page-footer > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.adress-part-one {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.adress-part-two {
+  padding-top: 9px;
+}
+
+.adress-part-three {
+  padding-top: 9px;
 }
 /*Портфолио*/
 
